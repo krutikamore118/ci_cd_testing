@@ -16,7 +16,7 @@ RUN mkdir "$ANDROID_HOME" .android \
 # Install Android Build Tool and Libraries
 RUN $ANDROID_HOME/tools/bin/sdkmanager --update
 RUN $ANDROID_HOME/tools/bin/sdkmanager
-    "build-tools;${ANDROID_BUILD_TOOLS_VERSION}" \
+"build-tools;${ANDROID_BUILD_TOOLS_VERSION}" \
     "platforms;android-${ANDROID_VERSION}" \
     "platform-tools"
 
