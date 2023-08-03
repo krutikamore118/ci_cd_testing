@@ -61,7 +61,7 @@ jobs:
      uses: mr-smithers-excellent/docker-build-push@v6.2
      with:
        image: krutikamore/my-test-app-image
-       tags: ${{ steps.bump_version.outputs.next.version }}
+       tags: ${{ steps.bump_version.outputs.next-version }}
        registry: docker.io
        username: ${{ secrets.DOCKER_USERNAME }}
        password: ${{ secrets.DOCKER_PASSWORD }}
